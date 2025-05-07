@@ -29,10 +29,15 @@ python main.py
 
 # MOT 
 git clone https://github.com/mikel-brostrom/boxmot.git
+
 cd boxmot
+
 pip install uv
+
 uv sync --group yolo
+
 activate .venv/bin/activate
 
 Copy the BoxMOT_Run.py in VS Code follow edits paths to models and folders
+
 Copy ./labels folder after tracking to same root folder as images for Larvae AI Tool Cropped Master Button
