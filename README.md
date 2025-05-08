@@ -88,7 +88,9 @@ Use REID Formatter script on VS Code
 Assumes input folder looks like this
 
 ----input_root
+
 ------folder1
+
 --------0001_frame_xxxxx.png
 
 Upload to kaggle and use REID Trainer notebook/script for training
