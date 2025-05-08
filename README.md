@@ -93,7 +93,9 @@ Assumes input folder looks like this
 
 Upload to kaggle and use REID Trainer notebook/script for training
 
+# Link to CAD Models and AI Models
 
+Link: https://uniofnottm-my.sharepoint.com/:f:/g/personal/eeysc14_nottingham_ac_uk/EvADQbfU9rFOsof874x7x84BssCXEN0MFEGv6xMoXm_Olg?e=j5GCYn
 
 
 
