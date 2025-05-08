@@ -2,6 +2,7 @@
 Repository containing the Larvae AI Tool, Version 1.1 Camera and LED System and additional AI Related Scripts
 # Setup
 Install Anconda or Miniconda
+Install FFMPEG 
 Ensure both are linked to system PATHs
 
 Install VS Code - Same Development Environment used in project
@@ -86,9 +87,9 @@ Use REID Formatter script on VS Code
 
 Assumes input folder looks like this
 
-# ----input_root
-# ------folder1
-# --------0001_frame_xxxxx.png
+----input_root
+------folder1
+--------0001_frame_xxxxx.png
 
 Upload to kaggle and use REID Trainer notebook/script for training
 
