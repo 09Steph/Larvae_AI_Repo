@@ -1,0 +1,51 @@
+name: GUI
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - hdf5=1.14.0
+  - pytables
+  - numpy
+  - scikit-image
+  - matplotlib
+  - pandas
+  - imageio
+  - scikit-learn
+  - tqdm
+  - pyyaml
+  - loguru
+  - fsspec
+  - lxml
+  - requests
+  - protobuf
+  - onnxruntime
+  - imgviz
+  - markdown
+  - rich
+  - pip:
+      # Mac M1/M2 TensorFlow setup:
+      - tensorflow-macos==2.11.0
+      - tensorflow-metal==0.7.0
+      
+      # Windows TensorFlow setup (UNCOMMENT if using Windows):
+      # - tensorflow==2.11.0
+
+      - keras==2.11.0
+      - torch==2.0.1
+      - torchvision==0.15.2
+      - opencv-python==4.11.0.86
+      - pyside6==6.8.2.1
+      - deeplabcut==3.0.0rc8
+      - labelImg==1.8.6
+      - labelme==5.8.1
+      - tensorpack==0.11
+      - tf-slim==1.1.0
+      - qtpy==2.4.1
+      - qdarkstyle==3.1
+      - "napari[all]"
+      - napari-deeplabcut==0.2.1.7
+      - lxml_html_clean
+      - ultralytics
+      - -e .

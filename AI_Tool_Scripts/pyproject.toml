@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "larvae_ai_tool"
+version = "0.1.0"
+description = "A PySide6 GUI tool for processing and analyzing larvae experiments."
+authors = [
+  { name = "Stephano"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+dependencies = [
+  "PySide6==6.8.2.1",
+  "numpy",
+  "opencv-python==4.11.0.86",
+  "scikit-image",
+  "matplotlib",
+  "pandas",
+
+  # Mac TensorFlow setup:
+  "tensorflow-macos==2.11.0",
+  "tensorflow-metal==0.7.0",
+
+  # Windows TensorFlow setup (UNCOMMENT if using Windows):
+  # "tensorflow==2.11.0",
+
+  "keras==2.11.0",
+  # "torch==2.0.1",
+  # "torchvision==0.15.2",
+  "torch==2.2.1",
+  "torchvision==0.17.1",
+  "labelImg==1.8.6",
+  "labelme==5.8.1",
+  "imageio",
+  "scikit-learn",
+  "tqdm",
+  "pyyaml",
+  "loguru",
+  "fsspec",
+  "lxml",
+  "requests",
+  "protobuf",
+  "onnxruntime",
+  "imgviz",
+  "markdown",
+  "rich",
+  "deeplabcut==3.0.0rc8",
+  "tensorpack==0.11",
+  "tf-slim==1.1.0",
+  "qtpy==2.4.1",
+  "qdarkstyle==3.1",
+  "napari[all]",
+  "napari-deeplabcut==0.2.1.7",
+  "lxml_html_clean",
+  "ultralytics"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["utils", "controllers", "windows"]
+
+[tool.setuptools]
+include-package-data = true
