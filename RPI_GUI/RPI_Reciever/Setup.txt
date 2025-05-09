@@ -1,0 +1,6 @@
+Note on setup of receiver:
+Ensure that RPI.GPIO annd/or pigpio are installed to raspberry pi
+Run as a sudo install such that it the PI has root system access
+Run contrab - e as sudo python ./dir/to/main.py
+
+

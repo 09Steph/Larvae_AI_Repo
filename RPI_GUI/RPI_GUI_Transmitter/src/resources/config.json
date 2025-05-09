@@ -1,0 +1,13 @@
+{
+    "IR_LEDs": {
+        "duty_cycle": 80.0,
+        "frequency": 500.0,
+        "active_time": 40.0
+    },
+    "Optogenetic_LEDs": {
+        "duty_cycle": 100.0,
+        "frequency": 500.0,
+        "flash_length": 10.0,
+        "initial_delay": 8.0
+    }
+}
