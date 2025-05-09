@@ -42,7 +42,6 @@ class MainWindowController:
         self.main_window.btn_reid_format.clicked.connect(self.open_reid_formatter_window)
         self.main_window.btn_mot.clicked.connect(self.open_mot_window)
         self.main_window.btn_pose.clicked.connect(self.open_pose_estimation_window)
-        self.main_window.btn_action.clicked.connect(self.open_action_classifier_window)
         self.main_window.btn_cropped.clicked.connect(self.open_cropped_window)
 
     # Section: Image Processing
