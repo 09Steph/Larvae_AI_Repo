@@ -7,7 +7,7 @@ Ensure both are linked to system PATHs
 
 Install VS Code - Same Development Environment used in project
 
-# Larvae AI Usage
+# Larvae AI Tool Usage
 git clone repo 
 
 cd ./path/to/Larvae_AI_Tool
