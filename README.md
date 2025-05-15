@@ -13,6 +13,7 @@ git clone repo
 cd ./path/to/Larvae_AI_Tool
 
 conda env create -f environment.yml
+
 conda activate GUI
 
 python -m pip install -e .
