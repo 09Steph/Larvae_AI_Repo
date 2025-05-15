@@ -13,6 +13,7 @@ from utils.flashing_frames_class import FlashingFrames
 from utils.video_encoder_class import VideoEncoderFFMPEG
 from utils.full_frame_annotator_class import FullFrameAnnotator
 
+# Controller does not utilise threading logic, outputs will appear after entire logic is applied
 # Acts as the master button controller used in the GUI
 # Key assumptions for input folder structure:
 # - The input folder contains images and a labels folder.
@@ -154,7 +155,9 @@ class CroppedMasterController:
     # 10. Calls full frame annotator to annotate bounding box labels on normal images based on boxmot labels
     # and encodes these the images as well
     # 11. Annotates flashing frames and encodes images in cropped larvae folders
-    # 12. Final message of operation appended to text widget of GUI
+    # 12. Per larvae .CSV file created and copied from main .csv file
+    # 13. Plots are created from per larcae .CSV file
+    # 14. Final message of operation appended to text widget of GUI
     def run_master(self, input_path, output_root_path, folder_name):
         working_root = os.path.join(output_root_path, folder_name)
         normal = os.path.join(working_root, "Normal")
