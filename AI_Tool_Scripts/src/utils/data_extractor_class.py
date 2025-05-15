@@ -34,6 +34,9 @@ class DataExtractor:
             "trajectory": "purple"
         }
 
+    def stop(self):
+        self.should_stop = True
+    
     def read_json_file(self, file_path):
         if not os.path.exists(file_path):
             return {}
