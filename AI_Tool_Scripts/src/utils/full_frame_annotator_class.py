@@ -21,6 +21,9 @@ class FullFrameAnnotator:
         self.should_stop = False
         os.makedirs(self.output_folder, exist_ok=True)
 
+    def stop(self):
+            self.should_stop = True
+    
     def draw_boxes(self, image_path, annotation_path):
         image = cv2.imread(image_path)
         if image is None:
