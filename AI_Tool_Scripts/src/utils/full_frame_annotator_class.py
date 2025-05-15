@@ -50,16 +50,16 @@ class FullFrameAnnotator:
                 x1 = int(round(x_c + bw / 2))
                 y1 = int(round(y_c + bh / 2))
 
-                # Blue bounding box and text color (BGR)
-                cv2.rectangle(image, (x0, y0), (x1, y1), (255, 0, 0), 2)
+                # Bounding box and text color and size
+                cv2.rectangle(image, (x0, y0), (x1, y1), (255, 255, 0), 2)
                 cv2.putText(
                     image,
                     f"ID:{obj_id}",
                     (x0, max(y0 - 5, 0)),
                     cv2.FONT_HERSHEY_SIMPLEX,
                     0.5,
-                    (255, 0, 0),
-                    1
+                    (255, 255, 0),
+                    2
                 )
 
         out_path = os.path.join(self.output_folder, os.path.basename(image_path))
