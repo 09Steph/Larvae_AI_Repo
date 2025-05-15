@@ -24,6 +24,9 @@ class LarvaeObjectCropper:
 
         os.makedirs(self.output_folder, exist_ok=True)
 
+    def stop(self):
+        self.should_stop = True
+
     def run(self):
         txt_files = sorted(glob.glob(os.path.join(self.input_folder, "*.txt")))
         total_files = len(txt_files)
