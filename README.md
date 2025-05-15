@@ -44,6 +44,8 @@ Copy the BoxMOT_Run.py in VS Code follow edits paths to models and folders
 
 Copy ./labels folder after tracking to same root folder as images for Larvae AI Tool Cropped Master Button
 
+deactivate (run this after a tracking such that you can activate Larvae AI Tool again)
+
 # Cropped Master
 
 Once the Larvae tool is open, select input folder containing the images and tracked labels inside the same input folder but a sub folder called "labels"
