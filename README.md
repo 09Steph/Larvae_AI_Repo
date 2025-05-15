@@ -32,7 +32,7 @@ python main.py
 # MOT 
 git clone https://github.com/mikel-brostrom/boxmot.git
 
-cd boxmot
+cd boxmot (the root dir)
 
 pip install uv
 
