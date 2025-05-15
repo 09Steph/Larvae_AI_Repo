@@ -38,7 +38,7 @@ pip install uv
 
 uv sync --group yolo
 
-source activate .venv/bin/activate
+source .venv/bin/activate
 
 Copy the BoxMOT_Run.py in VS Code follow edits paths to models and folders
 
