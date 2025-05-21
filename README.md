@@ -29,6 +29,24 @@ pip install -e .
 
 python main.py
 
+# Raspberry PI Login
+
+Transmitter/Primary PI
+
+Hostname: pisteph1.local
+
+Username: steph
+
+Password stephpi
+
+Receiver/Secondary PI
+
+Hostname: pisteph2.local
+
+Username: steph
+
+Password: stephpi
+
 # MOT 
 git clone https://github.com/mikel-brostrom/boxmot.git
 
