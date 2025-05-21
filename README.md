@@ -50,7 +50,7 @@ Password: stephpi
 # MOT 
 git clone https://github.com/mikel-brostrom/boxmot.git
 
-cd boxmot (the root dir)
+cd ./boxmot (the root dir)
 
 pip install uv
 
