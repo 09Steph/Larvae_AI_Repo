@@ -2,6 +2,7 @@ import os
 from PySide6.QtWidgets import QFileDialog, QMessageBox
 from controllers.thread_worker import ThreadWorker
 from utils.raw_to_16_class import RawTo16
+from utils.remove_hidden_class import RemoveHiddenFiles
 
 # Controller script used to control logic of demosaic button in UI
 # Used to demosaic images from the raw images
@@ -130,6 +131,11 @@ class DemosaicController:
 
     def handle_finished(self, row, input_folder, elapsed_time):
         self.timings.append((row, input_folder, elapsed_time))
+
+        # Added Function to handle MAC related hidden files
+        if not self.cancelling:
+            cleaner = RemoveHiddenFiles(input_folder)
+            cleaner()
 
         if all(not w.isRunning() for w in self.active_workers):
             if self.cancelling:
